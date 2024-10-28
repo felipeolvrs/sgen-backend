@@ -11,19 +11,19 @@ const Produto = sequelize.define(
     },
     nome: {
       type: DataTypes.STRING,
-      allowNull: false, // Nome do produto é obrigatório
+      allowNull: false, 
     },
     descricao: {
       type: DataTypes.STRING,
-      allowNull: true, // Descrição do produto é opcional
+      allowNull: true, 
     },
     preco: {
       type: DataTypes.FLOAT,
-      allowNull: false, // Preço do produto é obrigatório
+      allowNull: false, 
     },
     quantidade: {
       type: DataTypes.INTEGER,
-      allowNull: false, // Estoque do produto é obrigatório
+      allowNull: false, 
     },
     localizacao: {
       type: DataTypes.STRING,
@@ -31,17 +31,17 @@ const Produto = sequelize.define(
     },
     categoria: {
       type: DataTypes.STRING,
-      allowNull: true, // Categoria do produto é opcional
+      allowNull: true,
     },
     imagemUrl: {
       type: DataTypes.STRING,
-      allowNull: true, // URL da imagem do produto é opcional
+      allowNull: true, 
     },
   },
   {
-    // Configurações adicionais, se necessário
-    timestamps: true, // Adiciona createdAt e updatedAt
-    underscored: true, // Usar snake_case em vez de camelCase
+
+    timestamps: true, 
+    underscored: true,
   }
 );
 
